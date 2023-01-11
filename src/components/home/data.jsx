@@ -6,7 +6,7 @@ const Data = () => {
       <h1 className="home_title">Winnie Wang</h1>
       <h3 className="home_subtitle">Web Developer</h3>
       <p className="home_description">
-        Hey there! Welcome to my portfolio. I'm a coder with an art background. In other words, I majored in art and
+        I'm a coder with an art background. In other words, I majored in art and
         returned as a programmer. Oops.
       </p>
       <a href="#contact" className="button button-flex">
