@@ -4,6 +4,7 @@ import Header from './components/header/header.jsx';
 import Home from './components/home/home';
 import About from './components/about/about';
 import Skills from './components/skills/skills';
+import Services from './components/services/services';
 
 const App = () => {
 	return (
@@ -13,6 +14,7 @@ const App = () => {
 			<Home />
 			<About />
 			<Skills />
+			<Services />
 		</main>
 		</>
 	)}
