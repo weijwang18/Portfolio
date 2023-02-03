@@ -48,6 +48,11 @@
   color: var(--title-color-dark);
 }
 
+/* change background header */
+.scroll-header {
+  box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
+}
+
 /* ================= Breakpoints ================= */
 /* For medium devices */
 @media screen and (max-width: 768px) {
@@ -72,10 +77,10 @@
     transition: 0.3s;
   }
 
-/* Show Menu */
-.show-menu {
-	bottom: 0;
-}
+  /* Show Menu */
+  .show-menu {
+    bottom: 0;
+  }
 
   .nav_list {
     display: grid;
@@ -94,15 +99,15 @@
     font-size: 1.5rem;
     cursor: pointer;
     color: var(--title-color);
-  } 
+  }
 
   .nav_close:hover {
     color: var(--title-color-dark);
   }
 
   .nav_toggle {
-	font-size: 1.1rem;
-	cursor: pointer;
+    font-size: 1.1rem;
+    cursor: pointer;
   }
 
   .nav_icon,
@@ -114,11 +119,11 @@
 
 /* For small devices */
 @media screen and (max-width: 350px) {
-	.nav_menu {
-		padding: 2rem 0.25rem 4rem;
-	}
+  .nav_menu {
+    padding: 2rem 0.25rem 4rem;
+  }
 
-	.nav_list {
-		column-gap: 0;
-	}
+  .nav_list {
+    column-gap: 0;
+  }
 }
