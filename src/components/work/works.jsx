@@ -1,20 +1,52 @@
-import React from 'react';
-import { projectsData, projectsNav } from './data';
+import React from "react";
+import { useEffect } from "react";
+import { useState } from "react";
+import { projectsData, projectsNav } from "./data";
+import WorkItems from "./WorkItems";
 
-const Works =() => {
-	return (
-		<div>
-		<div className="work_filters">
-			{projectsNav.map((item, index) => {
-				return (
-					<span className="work_item" key={index}>{item.name}</span>
-				);
-			})}
-		</div>
+const Works = () => {
+  const [item, setItem] = useState({ name: "all" });
+  const [projects, setProjects] = useState([]);
+  const [active, setActive] = useState(0);
 
-		<div className="work_container"></div>
-		</div>
-	)
-}
+  useEffect(() => {
+    if (item.name === "all") {
+      setProjects(projectsData);
+    } else {
+      const newProjects = projectsData.filter((project) => {
+        return project.category === item.name;
+      });
+	  setProjects(newProjects);
+    }
+  }, [item]);
 
-export default Works
+  const handleClick = (e, index) => {
+	setItem({name: e.target.textContent});
+	setActive(index);
+  }
+;
+  return (
+    <div>
+      <div className="work_filters">
+        {projectsNav.map((item, index) => {
+          return (
+            <span onClick={(e) => {
+				handleClick(e, index);
+			}}
+			className={`${active === index ? 'active-work' : "" } work_item`} key={index}>
+              {item.name}
+            </span>
+          );
+        })}
+      </div>
+
+      <div className="work_container container grid">
+        {projects.map((item) => {
+          return <WorkItems item={item} key={item.id} />;
+        })}
+      </div>
+    </div>
+  );
+};
+
+export default Works;
