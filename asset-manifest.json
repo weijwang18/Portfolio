@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/Portfolio/static/css/main.71877582.css",
+    "main.js": "/Portfolio/static/js/main.f61fb6d1.js",
+    "static/media/HaiCue.png": "/Portfolio/static/media/HaiCue.31a2fcda4d7fd82355ea.png",
+    "static/media/profile.jpg": "/Portfolio/static/media/profile.df3dce457ffc7f946185.jpg",
+    "static/media/MagicFridge.png": "/Portfolio/static/media/MagicFridge.c45cbe1320182fd69ae4.png",
+    "static/media/SipandSnap.png": "/Portfolio/static/media/SipandSnap.c2c9d6cbe63e89a6ee1e.png",
+    "static/media/about.jpg": "/Portfolio/static/media/about.7e610179ca58e1bf8f1e.jpg",
+    "static/media/Winnie_Wang_Junior_Software_Engineer.pdf": "/Portfolio/static/media/Winnie_Wang_Junior_Software_Engineer.63cb46e9c1caa63e377a.pdf",
+    "static/media/Weather.png": "/Portfolio/static/media/Weather.057a9bffff370bdf2738.png",
+    "index.html": "/Portfolio/index.html",
+    "main.71877582.css.map": "/Portfolio/static/css/main.71877582.css.map",
+    "main.f61fb6d1.js.map": "/Portfolio/static/js/main.f61fb6d1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.71877582.css",
+    "static/js/main.f61fb6d1.js"
+  ]
+}
